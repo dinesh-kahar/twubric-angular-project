@@ -1,0 +1,205 @@
+.main-conatiner {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        box-shadow: 0px 0px 20px rgb(10 10 95 / 15%);
+        margin-bottom: 1rem;
+        border-radius: 2rem;
+    }
+
+    .follower-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .filter-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .sort-text {
+                font-size: 1.1rem;
+                font-weight: 700;
+            }
+        }
+
+    }
+
+    .sort-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: self-end;
+        padding-bottom: 1rem;
+
+        .sort-btn {
+            cursor: pointer;
+            display: flex;
+            gap: 0.5rem;
+
+            .down-img {
+                width: 1rem;
+            }
+
+        }
+
+    }
+
+    .card-main-section {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+
+        .card-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0px 0px 20px rgb(10 10 95 / 17%);
+            border-radius: 0.5rem;
+
+            .user-container {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 0.5rem;
+                justify-content: space-between;
+
+                .user-profile {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1rem;
+
+                    .profile {
+                        width: 4rem;
+                        border-radius: 5rem;
+                    }
+
+                    .user-full-name {
+                        display: flex;
+                        flex-direction: column;
+                        color: #333333;
+                        font-weight: 700;
+                        text-transform: capitalize;
+
+                        .user-name {
+                            font-weight: 400;
+                            text-transform: lowercase;
+                            font-size: 0.8rem;
+                        }
+
+                    }
+
+                }
+
+                .rating {
+                    color: #333333;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                }
+
+            }
+
+            .friend-conatiner {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                font-weight: 700;
+                color: #333333;
+
+                .friend-label {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .text {
+                        font-weight: 400;
+                    }
+
+                }
+
+            }
+
+            .remove-follower {
+                display: flex;
+                justify-content: space-between;
+                gap: 0.5rem;
+
+                .twitter-joint-date {
+                    display: flex;
+                    flex-direction: row;
+                    font-weight: 400;
+                    gap: 0.5rem;
+
+                    .joint-date-label {
+                        font-weight: 700;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .no-record {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+:host ::ng-deep {
+
+    .mat-button-toggle-button {
+        border: solid 1px rgba(0, 0, 0, 0.12);
+    }
+
+    .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+        padding: 4px 12px;
+    }
+
+    .mat-form-field-appearance-fill.mat-form-field-disabled .mat-form-field-flex {
+        background-color: #fff;
+        border: solid 1px rgba(0, 0, 0, 0.12);
+    }
+
+    .mat-date-range-input-inner {
+        color: #333333;
+    }
+
+    .mat-form-field-appearance-fill .mat-form-field-flex {
+        border-radius: 4px;
+        padding: 0.1rem 1rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .main-conatiner {
+        .card-main-section {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    }
+
+}
